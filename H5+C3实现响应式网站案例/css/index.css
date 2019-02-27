@@ -1,0 +1,205 @@
+* {
+    magin:0px;
+    padding:0px;
+    text-align: center;
+    font-size: 48px;
+}
+/*对头部底部中部进行通用样式设置*/
+#head,
+#foot,
+#main {
+    height: 100px;
+    width: 1200px;
+    background-color: #515151;
+    line-height: 100px;
+    margin: 0 auto;
+    /*min-width: 420px;*/
+}
+/*设置中部*/
+#main {
+    height: auto;
+    margin: 10px auto;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+/*左中右设置*/
+.left,
+.right,
+.center {
+    height: 600px;
+    /*line-height: 600px;*/
+    float: left;
+    width: 20%;
+    background-color: #ffffff;
+}
+/*对中间单独设置*/
+.center {
+    width: 60%;
+    border-left: 10px solid #ffffff;
+    border-right: 10px solid #ffffff;
+    /*Safari*/
+    -webkit-box-sizing: border-box;
+    /*Firefox*/
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*对头部信息进行设置*/
+#head ul li {
+    background-color: #515151;
+    width: 20%;
+    height: 60px;
+    float: left;
+    list-style: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+}
+#head ul .logo {
+    background-color: firebrick;
+    line-height: 60px;
+    margin-top: 10px;
+}
+#main .left .left1 div {
+    width: 48%;
+    height: 150px;
+    line-height: 128px;
+    background-color: orangered;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #ffffff;
+}
+#main .center img {
+    width: 700px;
+    height: 600px;
+}
+#main .right {
+    line-height: 40px;
+}
+#main .right .right_top img {
+    width: 100%;
+    height: 350px;
+}
+#main .right .time {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    background-color: #F7A703;
+    color: #ffffff;
+    margin-top: 10px;
+    font-family: 微软雅黑;
+    text-align: center;
+}
+#main .right .time span {
+    font-size: 20px;
+    font-weight: bold;
+}
+#main .right .title {
+    width: 100%;
+    height: 40px;
+    float: left;
+    line-height: 20px;
+    margin-top: 5px;
+    text-align: center;
+    color:rgb(81,81,81);
+    font-size: 14px;
+    font-family: 微软雅黑;
+    text-decoration: none;
+}
+#main .right ul {
+    margin: 0 auto;
+    list-style: none;
+
+}
+#main .right .bottom_news {
+    width: 100%;
+    height: 300px;
+}
+#main .right .bottom_news ul li {
+    color: rgb(81,81,81);
+    font-size: 15px;
+    width: 100%;
+    font-family: 微软雅黑;
+    line-height: 38px;
+    float: left;
+    /*margin-top: 5px;*/
+    display: block;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 38px;
+    border-bottom: 1px #C7C8C7 dotted;
+}
+#foot {
+    padding: 10px 10px 10px 10px;
+    width: 1200px;
+    height: 100px;
+    margin: 10px auto;
+    min-width: 1180px;
+    border-top: 10px solid #F7A703;
+
+}
+#foot #foot1 {
+    padding-left: 100px;
+}
+
+#foot #foot1 ul {
+    list-style: none;
+    float: left;
+    width: 20%;
+    margin-top: 0px;
+    margin-right: 80px;
+}
+#foot1 li {
+    font-size: 15px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: 微软雅黑;
+}
+@media only screen and (max-width: 1200px) {
+    #head,
+    #foot,
+    #main {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .right {
+        display: none;
+    }
+    .left {
+        width: 30%;
+    }
+    .center {
+        width: 70%;
+        border-right: hidden;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .right,
+    .left,
+    .center {
+        float: left;
+        width: 100%;
+    }
+    .right {
+        height: 200px;
+        display: block;
+        line-height: 200px;
+    }
+    .left {
+        height: 200px;
+        line-height: 200px;
+    }
+    .center {
+        height: 600px;
+        border-top: 10px solid #ffffff;
+        border-bottom: 10px solid #ffffff;
+        border-left: 0px solid #ffffff;
+        border-right: 0px solid #ffffff;
+    }
+}
