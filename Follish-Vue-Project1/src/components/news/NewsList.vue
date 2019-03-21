@@ -32,10 +32,12 @@ export default {
     },
     methods: {
         getNewsList(){
+
+            //https://www.easy-mock.com/mock/5c8d279a36743d2c6db8e906/Follish-vue/getcomments/1
             this.$http.get('https://www.easy-mock.com/mock/5c8d279a36743d2c6db8e906/Follish-vue/newslist').then(result => {
                 if(result.body.status === 0 ){
                     this.newslist = result.body.message;
-                    console.log(result.body.message)
+                    // console.log(result.body.message)
                 } else {
                     Toast("获取新闻列表失败！")
                 }
