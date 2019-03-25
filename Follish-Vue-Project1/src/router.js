@@ -15,6 +15,10 @@ import NewsInfo from './components/news/NewsInfo.vue'
 import PhotoList from './components/photos/PhotoList.vue'
 //导入图片详情
 import PhotoInfo from './components/photos/PhotoInfo.vue'
+//导入商品列表
+import GoodsList from './components/goods/GoodsList.vue'
+//导入商品详情页
+import GoodsInfo from './components/goods/GoodsInfo.vue'
 
 //创建路由对象
 var router = new VueRouter({
@@ -27,7 +31,9 @@ var router = new VueRouter({
         { path: '/home/newslist',component:NewsList },
         { path: '/home/newsinfo/:id',component: NewsInfo },
         { path: '/home/photolist',component: PhotoList },
-        { path: '/home/photoinfo/:id',component: PhotoInfo }
+        { path: '/home/photoinfo/:id',component: PhotoInfo },
+        { path: '/home/goodslist',component:GoodsList },
+        { path: '/home/goodsinfo/:id',component:GoodsInfo }
     ],
     linkActiveClass: 'mui-active'//覆盖默认（router-link-active）的路由高亮的类
 })

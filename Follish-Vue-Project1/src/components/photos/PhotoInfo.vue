@@ -64,7 +64,7 @@
 </script>
 
 
-<style lang="scss" scoped>
+<style lang="scss">
 .photoinfo-container {
     padding: 3px;
     h3 {
@@ -83,12 +83,16 @@
         line-height: 30px;
     }
     .thumbs {
-        height: 300px;
+        height: 280px;
+        float: left;
         img {
-            border: 0;
-            width: 100px;
-            height: 120px;
-            z-index: auto;
+            width: 75px;
+            height: 130px;
+            margin: 0px 10px;
+        }
+        figure {
+            margin: 0em 10px;
+            float: left;
         }
 
     }

@@ -22,16 +22,6 @@ Vue.filter('dateFormat',function (dataStr,pattern = "YYYY-MM-DD HH:mm:ss") {
 //安装图片预览插件
 import VuePreview from 'vue-preview'
 Vue.use(VuePreview)
-Vue.use(preview, {
-    mainClass: 'pswp--minimal--dark',
-    barsSize: {top: 0, bottom: 0},
-    captionEl: false,
-    fullscreenEl: false,
-    shareEl: false,
-    bgOpacity: 0.85,
-    tapToClose: true,
-    tapToToggleControls: false
-})
 
 //全局设置 post 时候的表单数据格式
 Vue.http.options.emulateJSON=true

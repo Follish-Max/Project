@@ -115,4 +115,11 @@
     
 ## 点击图片跳转详情页面
    - 在改造 li 为 router-link 的时候，需要使用 tag 属性指定为要渲染为何种元素
+
+## 实现图片详情中的 缩略图功能
+ + 使用插件 [vue-preview](https://github.com/LS1231/vue-preview)
+ + `注意`：修改样式的时候要把scoped删除
+ 
+## 绘制 商品列表页面并美化
+ + 使用的接口数据为：`http://www.liulongbin.top:3005/api/getgoods?pageindex=`
  
