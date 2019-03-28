@@ -51,7 +51,7 @@
                     .then(result=>{
                         if(result.body.status === 0) {
                             this.list = result.body.message;
-                            console.log(result.body.message)
+                            // console.log(result.body.message)
                         }
                     })
             }

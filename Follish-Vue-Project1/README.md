@@ -122,4 +122,7 @@
  
 ## 绘制 商品列表页面并美化
  + 使用的接口数据为：`http://www.liulongbin.top:3005/api/getgoods?pageindex=`
- 
+
+## 抽离轮播图组件
+
+## 购物车

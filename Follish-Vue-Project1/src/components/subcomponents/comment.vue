@@ -37,8 +37,8 @@ export default {
     },
     methods: {
         getComments() {
-            this.$http.get('https://www.easy-mock.com/mock/5c8d279a36743d2c6db8e906/Follish-vue/getcomments/'
-            +this.id+"?pageindex="+this.pageIndex)
+            this.$http.get('https://www.easy-mock.com/mock/5c8d279a36743d2c6db8e906/Follish-vue/getcomments/0'
+            )
                 .then(result => {
                     if(result.body.status === 0){
                     this.comments = result.body.message
