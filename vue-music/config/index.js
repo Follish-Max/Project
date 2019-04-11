@@ -11,7 +11,7 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/': {
+      '/api': {
         target: 'https://c.y.qq.com', //目标接口域名
         secure: false, //是否跨域
         changeOrigin: true,  //接口跨域需要设置
@@ -21,11 +21,44 @@ module.exports = {
         headers: {
           referer: 'https://c.y.qq.com'
         }
+      },
+      '/singer': {
+        target: 'https://u.y.qq.com', //目标接口域名
+        secure: false, //是否跨域
+        changeOrigin: true,  //接口跨域需要设置
+        pathRewrite: {
+          '^/singer': '/' //重写接口，api 代理
+        },
+        headers: {
+          referer: 'https://u.y.qq.com'
+        }
+      },
+      '/lyric': {
+        target: 'https://c.y.qq.com', //目标接口域名
+        secure: false, //是否跨域
+        changeOrigin: true,  //接口跨域需要设置
+        pathRewrite: {
+          '^/lyric': '/' //重写接口，api 代理
+        },
+        headers: {
+          referer: 'https://c.y.qq.com'
+        }
+      },
+      '/disc': {
+        target: 'https://c.y.qq.com', //目标接口域名
+        secure: false, //是否跨域
+        changeOrigin: true,  //接口跨域需要设置
+        pathRewrite: {
+          '^/disc': '/' //重写接口，api 代理
+        },
+        headers: {
+          referer: 'https://c.y.qq.com/'
+        }
       }
     },
 
     // Various Dev Server settings
-    host: '192.168.253.1', // can be overwritten by process.env.HOST
+    host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
