@@ -229,7 +229,7 @@ export default {
       top: 0
       bottom: 0
       width: 100%
-      overflow: hidden
+      /*overflow: hidden*/
       background: $color-background
       .song-list-wrapper
         padding: 20px 30px
